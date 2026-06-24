@@ -1,0 +1,107 @@
+
+body {
+  margin: 0;
+  background: black; 
+  color: white;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: black;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.logo {
+  height: 50px;
+  width: 120px;
+}
+
+.menu-toggle {
+  width: 30px;
+  height: 22px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  z-index: 1100;
+}
+
+.menu-toggle span {
+  height: 3px;
+  width: 100%;
+  background: white;
+  transition: 0.4s ease;
+  /* border-radius: 10px; */
+}
+
+.menu-toggle.active span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.menu-toggle.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-toggle.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.95);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.4s ease;
+  z-index: 999;
+}
+
+.overlay.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.menu {
+  list-style: none;
+  text-align: center;
+  padding: 0;
+}
+
+.menu li {
+  margin: 25px 0;
+}
+
+.menu a {
+  text-decoration: none;
+  color: white;
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.socials{
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  margin-top: 40%;
+}
+
+.socials a{
+    font-size: 50px;
+}

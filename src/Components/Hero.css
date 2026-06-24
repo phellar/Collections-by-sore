@@ -1,0 +1,166 @@
+
+.hero-section{
+    padding: 40px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.content-box{
+    width: 900px;
+    margin: 0 auto;
+    /* height: 100vh; */
+}
+
+.content-box h1{
+    font-size: 120px;
+    font-weight: 600;
+    text-align: center;
+}
+.content-box p{
+    font-weight: 200;
+    text-align: center;
+}
+
+.collection{
+    text-align: center;
+}
+
+.badge{
+    background-color: rgba(210, 188, 187, 0.33);
+    border: 1px solid rgba(255, 255, 255, 0.21);
+    width: fit-content;
+    padding: 5px 15px;
+    border-radius: 50px;
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    margin-left: 3%;
+}
+.dot{
+    background-color: red;
+    width: 12px;
+    height: 12px;
+    border-radius: 100%;
+    margin-right: 10px;
+}
+
+.badge p{
+    font-weight: 200;
+}
+
+.pg{
+    line-height: 1.8;
+    /* width: 480px; */
+    padding: 0px 170px;
+}
+
+.btn-box{
+    margin: 0 auto;
+    width: fit-content;
+    margin-top: 50px;
+}
+
+.hero-image{
+    margin-top: 60px;
+    height: fit-content;
+    width: 100%;
+}
+/* ============================================================= */
+/* Media Query */
+/* ============================================================= */
+/* TABLET VIEW */
+@media screen and (max-width: 768px) {
+    .content-box{
+    width: 100%;
+}
+
+.content-box h1{
+    font-size: 60px;
+    text-align: center;
+   
+}
+.content-box p{
+    font-weight: 200;
+    text-align: center;
+}
+
+.collection{
+    text-align: center;
+}
+
+.badge{
+    margin-left: 0%;
+    margin-bottom: 5px;
+}
+
+
+.pg{
+    padding: 0px;
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: 200;
+}
+
+.btn-box{
+    margin: 0 auto;
+    width: fit-content;
+    margin-top: 50px;
+}
+
+}
+
+
+/* MOBILE VIEW */
+@media screen and (max-width: 480px) {
+.hero-section{
+    padding: 0px;
+}
+.content-box{
+    width: 100%;
+
+}
+
+.content-box h1{
+    font-size: 55px;
+      text-align: center;
+   
+}
+.content-box p{
+    font-weight: 200;
+    text-align: center;
+    padding: 0px 30px;
+}
+
+.collection{
+    text-align: center;
+}
+
+.pg{
+    padding: 0px;
+    margin-top: 10px;
+    font-size: 12px;
+    font-weight: 200;
+}
+
+.btn-box{
+    margin: 0 auto;
+    width: fit-content;
+    margin-top: 50px;
+}
+
+.badge{
+    margin-left: 0%;
+    margin-bottom: 5px;
+    /* width: 190px; */
+    justify-content: center;
+}
+
+.dot{
+    margin-right: 0px;
+}
+
+
+}
+

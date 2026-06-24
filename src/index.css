@@ -1,0 +1,71 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* =================================================================== */
+/* utilities */
+:root{
+  --primary: #CF211B;
+  --Tertiary: #1A1A1A;
+}
+
+a{
+  text-decoration: none;
+}
+
+h1,h2,h3{
+  font-weight: 600;
+}
+
+.cta-1{
+  background-color: var(--primary);
+  text-align: center;
+  color: white;
+  padding: 15px 30px;
+  border-radius: 50px;
+}
+
+.container {
+max-width: 1200px;
+margin: 0 auto;
+}
+/* ================================================= */
+body{
+  background-color: black;
+  font-family: Clash-display;
+  overflow-x: hidden;
+}
+
+@font-face {
+    font-family: Clash-display;
+    src: url("./Fonts/ClashDisplay-Bold.otf") format("opentype");
+     font-weight: 700;
+}
+@font-face {
+    font-family: Clash-display;
+    src: url("./Fonts/ClashDisplay-Extralight.otf") format("opentype");
+     font-weight: 200; 
+}
+@font-face {
+    font-family: Clash-display;
+    src: url("./Fonts/ClashDisplay-Light.otf") format("opentype");
+    font-weight: 300;
+}
+@font-face {
+    font-family: Clash-display;
+    src: url("./Fonts/ClashDisplay-Medium.otf") format("opentype");
+     font-weight: 500;
+}
+@font-face {
+    font-family: Clash-display;
+    src: url("./Fonts/ClashDisplay-Regular.otf") format("opentype");
+    font-weight: 400;
+}
+@font-face {
+    font-family: Clash-display;
+    src: url("./Fonts/ClashDisplay-Semibold.otf") format("opentype");
+     font-weight: 600;
+}
+
+
