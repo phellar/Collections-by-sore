@@ -3,7 +3,7 @@ import { CartProvider } from "./Context/CartContext";
 
 // Pages
 import Home from "./Pages/Home";
-import Checkout from "./Pages/CheckOut";
+import CheckOut from "./Pages/CheckOut";
 import Portrait from "./Pages/Portrait";
 import About from "./Pages/About";
 import TheArtist from "./Pages/TheArtist";
@@ -24,7 +24,7 @@ function App() {
           <Route path="/collections" element={<Collections />} />
           <Route
             path="/checkout"
-            element={<Checkout onBack={() => navigate("/")} />}
+            element={<CheckOut />}
           />
           {/* <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} /> */}
