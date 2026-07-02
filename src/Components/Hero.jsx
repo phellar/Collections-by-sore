@@ -1,7 +1,7 @@
 import React, { useLayoutEffect, useRef } from "react";
 import "./Hero.css";
 import { Link } from "react-router-dom";
-import HeroImage from "../Assets/hero-image.png";
+import HeroImage from "../assets/hero-image.png";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { ArrowRight } from "lucide-react";
