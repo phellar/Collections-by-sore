@@ -3,7 +3,7 @@ import { CartProvider } from "./Context/CartContext";
 
 // Pages
 import Home from "./Pages/Home";
-import CheckOut from "./Pages/CheckOut";
+import CheckOut from "./Pages/Checkout"; 
 import Portrait from "./Pages/Portrait";
 import About from "./Pages/About";
 import TheArtist from "./Pages/TheArtist";
