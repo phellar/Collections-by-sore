@@ -1,0 +1,186 @@
+.collect{
+    /* background: url(../assets/collection-bg.png) no-repeat center; */
+    width: 100vw;
+    padding: 50px 0px;
+    border-bottom: 0.5px solid white;
+    border-top: 0.5px solid white;
+}
+
+.lc__filters {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+  gap: 20px;
+}
+
+.lc__filter-pills {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+
+.lc__pill {
+font-family: inherit;
+  background-color: transparent;
+  color: #ffffff;
+  border: 1px solid #ffffff; 
+  border-radius: 25px;       
+  padding: 15px 30px;
+  font-size: 16px;
+  /* font-weight: 300; */
+  cursor: pointer;
+  transition: all 0.25s ease-in-out;
+}
+
+
+.lc__pill:hover:not(.lc__pill--active) {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+
+.lc__pill--active {
+  background-color: #ffffff; 
+  color: #000000;            
+  border-color: #ffffff;
+}
+
+.lc__sort {
+  background: transparent;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.2s ease;
+}
+
+.lc__sort:hover {
+  opacity: 0.8;
+}
+
+.box h1{
+  font-size: 80px;
+  font-weight: 600;
+}
+.box p{
+  font-size: 16px;
+  font-weight: 200;
+  line-height: 1.8;
+  width: 700px;
+}
+
+.product-card{
+  /* height: 350px; */
+  width: 300px;
+  background-color: var(--Tertiary);
+  border-radius: 15px;
+  padding-bottom: 15px;
+  color: white;
+
+}
+
+.product-img{
+  height: 50%;
+  width: 100%;
+  border-radius: 10px;
+}
+.product-img{
+  height: 70%;
+  width: 100%;
+  border-radius: 10px;
+}
+.product-description{
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+    color: white;
+}
+.product-description h3{
+  font-weight: 400;
+  font-size: 18px;
+
+
+}
+
+.sec-btn{
+  padding: 10px 40px;
+  background: transparent;
+  border: 1px solid white;
+  text-align: center;
+  color: white;
+  border-radius: 50px;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center; 
+  justify-content: center;
+}
+
+.icon{
+  margin-left: 10px;
+  text-align: center;
+}
+
+.btn-box-2{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ margin-top: 20px;
+}
+
+.card-group{
+  display: flex;
+  gap: 30px;
+  padding: 65px 0px;
+  flex-wrap: wrap;
+}
+
+
+
+/* ============================================================= */
+/* Media Query */
+/* ============================================================= */
+/* TABLET VIEW */
+@media screen and (max-width: 768px) {
+  .box h1{
+  font-size: 50px;
+  width: 400px;
+  margin-bottom: 10px;
+
+}
+.box p{
+  font-size: 16px;
+  width: 100%;
+}
+.lc__filters {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 30px;
+  gap: 20px;
+}
+
+.lc__pill {
+  padding: 10px 30px;
+}
+
+
+
+.lc__filter-pills {
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+
+
+}
+
+/* MOBILE VIEW */
+@media screen and (max-width: 486px) {
+
+
+}

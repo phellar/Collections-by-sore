@@ -24,8 +24,25 @@
   margin-top: 20px;
 }
 
+.highlight{
+  font-size: 28px;
+   font-weight: 400;
+   font-style: italic;
+   
+}
+
 .btn-box-1 {
   margin-top: 40px;
+}
+
+.cta{
+  background-color:var(--primary);
+  display: flex;
+  padding: 15px 25px;
+  align-items: center;
+  width: fit-content;
+  border-radius: 50px;
+  color: white;
 }
 
 /* ==================================================== */
@@ -44,7 +61,7 @@
     width: 600px;
   }
   .about-box h1 {
-    font-size: 40px;
+    font-size: 50px;
   }
   .about-box p {
   font-size: 14px;

@@ -1,0 +1,32 @@
+.not-section{
+    height: 100vh;
+    width: 100vw;
+     display: flex;
+}
+
+.not-box h1{
+    font-size: 150px;
+    /* color: var(--primary); */
+}
+.not-box p{
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 15px;
+    /* color: var(--primary); */
+}
+.not-box {
+   /* margin-top: 6%; */
+    display: flex;
+    flex-direction: column;  
+    justify-content: center;
+    align-items: center;
+}
+
+/* ── Tablet ──────────────────────────────────────── */
+@media screen and (max-width: 768px) {
+ 
+.not-box h1{
+    font-size: 100px;
+    /* color: var(--primary); */
+    }
+}

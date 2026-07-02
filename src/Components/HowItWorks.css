@@ -3,7 +3,7 @@
     width: 100vw;
     background: url('../assets/bg-how.png') no-repeat center center/cover;
     padding: 30px 0px;
-    border-bottom: 0.5px solid white;
+    /* border-bottom: 0.5px solid white; */
 }
 
 .text-box h1{
@@ -16,7 +16,8 @@
     font-size: 16px;
     margin-bottom: 40px;
     padding-right: 35px;
-    width: 450px;
+    width: 500px;
+    line-height: 1.8;
 }
 
 .step-container{
@@ -88,7 +89,7 @@
 /* TABLET VIEW */
 @media screen and (max-width: 768px) {
 .text-box h1{
-    font-size: 40px;
+    font-size: 50px;
 }
 
 .card-1{
@@ -109,8 +110,8 @@
 }
 .card-1:nth-child(even){
     align-self: flex-end;
-    transform: rotate(-3deg);
-    margin-right: -22%;
+    transform: rotate(-5deg);
+    margin-right: 0%;
 }
 
 
@@ -133,3 +134,26 @@
 
 
 }
+/* Mobile VIEW */
+@media screen and (max-width: 486px) {
+
+.card-1:nth-child(even){
+    align-self: flex-end;
+    transform: rotate(-5deg);
+    margin-right: 0%;
+}
+
+.how-it-work{
+    padding: 30px 0px;
+}
+
+.card-1{
+    height: 120px;
+    width: 350px;
+    padding: 15px 30px;
+    border-radius: 12px;
+}
+
+
+}
+

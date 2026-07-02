@@ -4,6 +4,9 @@ import Header from '../Components/Header'
 import ShortAbout from '../Components/ShortAbout'
 import HowItWorks from '../Components/HowItWorks'
 import FAQ from '../Components/FAQ'
+import PersonalizedPortrait from '../Components/PersonalizedPortrait'
+import LatestCollection from '../Components/LatestCollection'
+import Footer from '../Components/Footer'
 
 
 const Home = () => {
@@ -12,8 +15,11 @@ const Home = () => {
         <Header/>
         <Hero/>
         <ShortAbout/>
+        <LatestCollection/>
         <HowItWorks/>
+        <PersonalizedPortrait/>
         <FAQ/>
+        <Footer/>
     </>
   )
 }

@@ -1,14 +1,90 @@
-.faq{
+.faq {
     height: fit-content;
-    padding: 30px 0px;
+    padding: 60px 0px;
 }
 
-.card{
-    
+.faq-text-box h1 {
+    font-size: 80px;
+    /* line-height: 1.2; */
+}
+.faq-text-box p {
+    font-size: 16px;
+    margin-top: 10px;
+    font-weight: 200;
+    /* line-height: 1.2; */
+}
+
+.badge-box{
+    /* background-color: red; */
+    width: 100px;
+}
+
+h5 {
+    font-weight: 500;
+    margin: 0;
+    color: white;
+    font-size: 20px;
+}
+
+.card {
     height: fit-content;
     width: 100%;
-    padding: 30px 0px;
+    padding: 30px;
     border-radius: 15px;
-    /* background-color: var(--Tertiary); */
     background: url('../assets/faq-bg.png') no-repeat center center/cover;
+}
+
+.question-box {
+    padding: 20px 0px;
+}
+
+.question {
+    border-bottom: 0.5px solid rgba(255, 255, 255, 0.3);
+    padding: 18px 0;
+    cursor: pointer;
+}
+
+.question-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+
+.icon {
+    font-size: 1.25rem;
+    color: white;
+    user-select: none;
+    flex-shrink: 0;
+    line-height: 1;
+}
+
+.answer {
+    margin-top: 12px;
+    color: rgba(255, 255, 255, 0.75);
+    line-height: 1.65;
+    font-size: 14px;
+    width: 800px !important;
+    max-width: 800px !important;
+    
+}
+
+/* ============================================================= */
+/* Media Query */
+/* ============================================================= */
+/* TABLET VIEW */
+@media screen and (max-width: 768px) {
+    .answer {
+    margin-top: 12px;
+    color: rgba(255, 255, 255, 0.75);
+    line-height: 1.65;
+    font-size: 14px;
+    width: 320px !important;
+    /* max-width: 800px !important; */
+    
+}
+.faq-text-box h1 {
+    font-size: 50px;
+    /* line-height: 1.2; */
+}
 }

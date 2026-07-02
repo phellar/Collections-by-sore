@@ -1,0 +1,255 @@
+.product{
+    height: 100vh;
+    width: 100vw;
+}
+
+.product {
+  height: fit-content;
+  width: 100vw;
+  padding: 60px 0;
+  min-height: 100vh;
+}
+.product-container {  
+  height: fit-content;
+  width: 100vw;
+  padding: 60px 0;
+  min-height: 100vh;
+}
+
+
+/* ── Back button ─────────────────────────────────── */
+.product-back {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: white;
+  font-size: 14px;
+  margin-bottom: 40px;
+  opacity: 0.7;
+  transition: opacity 0.2s;
+  padding: 0;
+}
+
+.product-back:hover {
+  opacity: 1;
+}
+
+
+
+/* ── Image card ──────────────────────────────────── */
+.bg-card {
+  display: flex;
+  position: relative;
+  /* flex: 1; */
+  border-radius: 15px;
+  overflow: hidden;
+  background: var(--Tertiary);
+  justify-content: space-between;
+}
+
+.bg-card img {
+  width: 350px;
+  height:fit-content;
+  object-fit: cover;
+  display: block;
+  border-radius: 15px;
+}
+
+.product-category-badge {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  background: rgba(0, 0, 0, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 20px;
+  padding: 4px 14px;
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: white;
+  backdrop-filter: blur(6px);
+}
+
+/* ── Product info ────────────────────────────────── */
+.product-info {
+  width: 450px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-top: 10px;
+  color: white;
+}
+
+.product-name {
+  font-size: 28px;
+  line-height: 1.1;
+  font-weight: 600;
+}
+
+.product-price{
+  font-size: 24px;
+  font-weight: 400;
+  margin: 0;
+  color: white;
+}
+
+.product-desc {
+  font-size: 14px;
+  line-height: 1.8;
+  opacity: 0.6;
+  margin: 0;
+  color: white;
+}
+
+/* ── Quantity counter ────────────────────────────── */
+.qty-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.qty-label {
+  font-size: 12px;
+  letter-spacing: 0.06em;
+  opacity: 0.5;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.qty-counter {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  width: fit-content;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.qty-btn {
+  background: rgba(255, 255, 255, 0.06);
+  border: none;
+  cursor: pointer;
+  color: white;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s;
+  padding: 0;
+}
+
+.qty-btn:hover {
+  background: rgba(255, 255, 255, 0.14);
+}
+
+.qty-value {
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+  min-width: 52px;
+  text-align: center;
+  border-left: 1px solid rgba(255, 255, 255, 0.1);
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ── Buy button ──────────────────────────────────── */
+.product-buy-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  border: none;
+  cursor: pointer;
+  margin-top: 8px;
+  font-size: 14px;
+}
+
+/* ── Error state ─────────────────────────────────── */
+.product-error {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  min-height: 60vh;
+  text-align: center;
+  opacity: 0.6;
+}
+
+/* ── Skeleton ────────────────────────────────────── */
+.skeleton-page {
+  gap: 60px;
+}
+
+.skeleton-title {
+  height: 52px;
+  width: 80%;
+  border-radius: 8px;
+  margin-bottom: 4px;
+}
+
+.skeleton-price {
+  height: 32px;
+  width: 40%;
+  border-radius: 8px;
+}
+
+.skeleton-desc {
+  height: 16px;
+  width: 100%;
+  border-radius: 6px;
+}
+
+.skeleton-desc.short {
+  width: 65%;
+}
+
+.skeleton-shimmer {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.05) 25%,
+    rgba(255, 255, 255, 0.1) 50%,
+    rgba(255, 255, 255, 0.05) 75%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 1.4s infinite;
+}
+
+@keyframes shimmer {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+/* ── Tablet ──────────────────────────────────────── */
+@media screen and (max-width: 768px) {
+  .product-container {
+    flex-direction: column;
+  }
+
+  .bg-card img {
+    height: 400px;
+  }
+
+  .product-info {
+    width: 100%;
+  }
+
+  .product-name {
+    font-size: 36px;
+  }
+
+  .product-price {
+    font-size: 22px;
+  }
+}

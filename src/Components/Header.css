@@ -25,8 +25,8 @@ body {
 }
 
 .logo {
-  height: 50px;
-  width: 120px;
+  height: 45px;
+  width: 100px;
 }
 
 .menu-toggle {
@@ -40,7 +40,7 @@ body {
 }
 
 .menu-toggle span {
-  height: 3px;
+  height: 2px;
   width: 100%;
   background: white;
   transition: 0.4s ease;
@@ -62,7 +62,7 @@ body {
 .overlay {
   position: fixed;
   inset: 0;
-  background: rgba(0, 0, 0, 0.95);
+  background: rgba(0, 0, 0, 0.979);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -82,6 +82,7 @@ body {
   list-style: none;
   text-align: center;
   padding: 0;
+  
 }
 
 .menu li {
@@ -92,7 +93,8 @@ body {
   text-decoration: none;
   color: white;
   font-size: 32px;
-  font-weight: 600;
+  font-weight: 500;
+
 }
 
 .socials{
@@ -104,4 +106,54 @@ body {
 
 .socials a{
     font-size: 50px;
+}
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.cart-icon-btn {
+  position: relative;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: inherit;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.2s;
+  margin-right: 10px;
+}
+
+.cart-icon-btn:hover {
+  opacity: 0.7;
+}
+
+.cart-badge {
+  position: absolute;
+  top: -7px;
+  right: -7px;
+  background: #e63946;
+  color: #fff;
+  font-size: 9px;
+  font-weight: 400;
+  min-width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 3px;
+  line-height: 1;
+  pointer-events: none;
+  letter-spacing: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .menu {
+  text-align: left;
+}
 }

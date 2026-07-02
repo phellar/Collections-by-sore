@@ -1,0 +1,38 @@
+.artist-wrapper{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.artist-img{
+    height:450px;
+    width: 75%;
+    border-radius: 20px;
+    background: url(../assets/Studio\ shoot.jpg.jpeg) no-repeat center center/cover;
+}
+
+.g{
+    width: 500px;
+}
+
+.b-1{
+    margin-top: 10%;
+}
+
+@media screen and (max-width: 768px) {
+    .artist-wrapper{
+   flex-direction: column;
+}
+.g{
+    width: 100%;
+}
+
+.artist-img{
+    height:300px;
+    width: 100%;
+}
+.b-1{
+    width: 100%;
+    margin-top: 10%;
+}
+}

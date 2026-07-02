@@ -1,9 +1,15 @@
 
 .hero-section{
+    background: url(../assets/hero-bg-new.png) no-repeat center center/cover;
     padding: 40px 0px;
     display: flex;
     justify-content: center;
     align-items: center;
+    min-height: 100vh;
+}
+
+.overlay{
+    width: 100vw;
     min-height: 100vh;
 }
 
@@ -17,6 +23,7 @@
     font-size: 120px;
     font-weight: 600;
     text-align: center;
+     line-height: 1.2
 }
 .content-box p{
     font-weight: 200;
@@ -57,15 +64,39 @@
 }
 
 .btn-box{
-    margin: 0 auto;
+    margin: 0px auto;
     width: fit-content;
     margin-top: 50px;
+    margin-bottom: 50px;
+
+}
+
+.cta-1{
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .hero-image{
-    margin-top: 60px;
+    /* margin-top: 60px; */
     height: fit-content;
     width: 100%;
+}
+
+.btn-icon{
+    text-align: center;
+    font-size: 14px;
+    background-color: blue;
+    margin-left: 15px;
+    padding: 10px;
+    border-radius: 50px;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
 }
 /* ============================================================= */
 /* Media Query */
@@ -76,15 +107,17 @@
     width: 100%;
 }
 
-.content-box h1{
+    .content-box h1{
     font-size: 60px;
-    text-align: center;
+      text-align: left;
    
 }
 .content-box p{
     font-weight: 200;
-    text-align: center;
+    text-align: left;
+    padding: 0px 0px;
 }
+
 
 .collection{
     text-align: center;
@@ -112,55 +145,7 @@
 }
 
 
-/* MOBILE VIEW */
-@media screen and (max-width: 480px) {
-.hero-section{
-    padding: 0px;
-}
-.content-box{
-    width: 100%;
-
-}
-
-.content-box h1{
-    font-size: 55px;
-      text-align: center;
-   
-}
-.content-box p{
-    font-weight: 200;
-    text-align: center;
-    padding: 0px 30px;
-}
-
-.collection{
-    text-align: center;
-}
-
-.pg{
-    padding: 0px;
-    margin-top: 10px;
-    font-size: 12px;
-    font-weight: 200;
-}
-
-.btn-box{
-    margin: 0 auto;
-    width: fit-content;
-    margin-top: 50px;
-}
-
-.badge{
-    margin-left: 0%;
-    margin-bottom: 5px;
-    /* width: 190px; */
-    justify-content: center;
-}
-
-.dot{
-    margin-right: 0px;
-}
 
 
-}
+
 
