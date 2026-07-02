@@ -13,7 +13,7 @@ const formatCurrency = (amount) =>
     maximumFractionDigits: 2,
   }).format(Number(amount));
 
-const Checkout = ({ onBack }) => {
+const CheckOut = ({ onBack }) => {
   const { cartItems, cartTotal } = useCart();
 
   const [form, setForm] = useState({
@@ -189,4 +189,4 @@ const Checkout = ({ onBack }) => {
   );
 };
 
-export default Checkout;
+export default CheckOut;
