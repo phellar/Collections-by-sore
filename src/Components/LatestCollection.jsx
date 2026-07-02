@@ -6,6 +6,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useCart } from "../Context/CartContext";
 import { useNavigate } from "react-router-dom";
 import "./LatestCollection.css";
+import { formatCurrency } from "../Shared/formatCurrency";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -198,12 +199,8 @@ const LatestCollection = () => {
 
                   <div className="product-description">
                     <h3>{item.name}</h3>
-                    <h3>
-                      {new Intl.NumberFormat("en-US", {
-                        style: "currency",
-                        currency: "USD",
-                      }).format(Number(item.price))}
-                    </h3>
+                    
+                      <h3>{formatCurrency(item.price)}</h3>
                   </div>
                   
                   <div className="btn-box-2">

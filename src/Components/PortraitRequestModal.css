@@ -1,0 +1,115 @@
+.portrait-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 20px;
+}
+
+.portrait-modal {
+  background: #fff;
+  width: 100%;
+  max-width: 560px;
+  max-height: 90vh;
+  overflow-y: auto;
+  border-radius: 12px;
+  padding: 32px;
+  position: relative;
+}
+
+.portrait-modal-close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 6px;
+  color: #333;
+}
+
+.portrait-modal h2 {
+  margin-bottom: 8px;
+  font-size: 24px;
+}
+
+.portrait-modal-sub {
+  margin-bottom: 24px;
+  color: #666;
+  font-size: 14px;
+}
+
+.portrait-modal-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.form-row {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  flex: 1;
+}
+
+.form-row-group {
+  display: flex;
+  gap: 16px;
+}
+
+.form-row label {
+  font-size: 13px;
+  font-weight: 500;
+  color: #333;
+}
+
+.form-row input,
+.form-row select,
+.form-row textarea {
+  padding: 10px 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 14px;
+  font-family: inherit;
+}
+
+.form-row textarea {
+  resize: vertical;
+}
+
+.portrait-modal-form button[type="submit"] {
+  margin-top: 8px;
+  width: 100%;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.portrait-modal-form button[type="submit"]:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.portrait-modal-error {
+  color: #c0392b;
+  font-size: 13px;
+}
+
+.portrait-modal-success {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.portrait-modal-success p {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+@media (max-width: 500px) {
+  .form-row-group {
+    flex-direction: column;
+  }
+}

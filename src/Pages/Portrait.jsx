@@ -5,14 +5,9 @@ import Header from "../Components/Header";
 import { supabase } from "../Utils/SuperbaseClient";
 import { useCart } from "../Context/CartContext";
 import "./Portrait.css";
+import { formatCurrency } from "../Shared/formatCurrency";
 
-const formatCurrency = (amount) =>
-  new Intl.NumberFormat("en-US", {
-    style: "currency",
-    currency: "USD",
-    minimumFractionDigits: 2,
-    maximumFractionDigits: 2,
-  }).format(Number(amount));
+
 
 const Portrait = () => {
   const { id } = useParams();
@@ -134,7 +129,7 @@ const Portrait = () => {
             <div className="product-info">
               <h3 className="product-name">{product.name}</h3>
               {product.product_desc && (
-                <p className="product-description">{product.product_desc}</p>
+              <p className="product-description">{product.product_desc}</p>
               )}
               <p className="product-price">{formatCurrency(product.price)}</p>
 

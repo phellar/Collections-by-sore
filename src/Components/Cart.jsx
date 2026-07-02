@@ -3,14 +3,9 @@ import { X, Minus, Plus, Trash2, ShoppingCart } from "lucide-react";
 import { useCart } from "../Context/CartContext";
 import { useNavigate } from "react-router-dom";
 import "./Cart.css";
+import { formatCurrency } from "../Shared/formatCurrency";
 
-const formatCurrency = (amount) =>
-  new Intl.NumberFormat("en-US", {
-    style: "currency",
-    currency: "USD",
-    minimumFractionDigits: 2,
-    maximumFractionDigits: 2,
-  }).format(Number(amount));
+
 
 const Cart = () => {
   const {

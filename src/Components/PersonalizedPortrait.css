@@ -26,11 +26,13 @@
     cursor:pointer;
     width: 200px;
     margin-top: 20px;
+    font-weight: 500;
+    text-align: center;
 }
 
 .cont-text-box{
     
-    width: 600px;
+    width: 550px;
      /* height: fit-content; */
 }
 
@@ -41,6 +43,7 @@
 .cont-text-box p{
     font-size: 16px;
     line-height: 1.8;
+    font-weight: 200;
     padding-right:40px;
     margin-top:15px;
 }
@@ -63,7 +66,7 @@
 }
 
 .cont-text-box h1{
-    font-size: 50px;
+    font-size: 46px;
     line-height: 1.1;
 }
 .cont-text-box p{
@@ -77,6 +80,7 @@
     width: 100%;
 }
 
+
 .bg-card img{
     width: 300px;
     height: fit-content;
@@ -85,6 +89,10 @@
 
 .bg-card{
     padding: 20px;
+}
+
+#cnt-img{
+    width: 100%;
 }
 
 }

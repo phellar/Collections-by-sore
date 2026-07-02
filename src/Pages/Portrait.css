@@ -38,7 +38,6 @@
 }
 
 
-
 /* ── Image card ──────────────────────────────────── */
 .bg-card {
   display: flex;
@@ -51,9 +50,10 @@
 }
 
 .bg-card img {
-  width: 350px;
-  height:fit-content;
+  width: 450px;
+  height: 450px;
   object-fit: cover;
+  
   display: block;
   border-radius: 15px;
 }
@@ -75,13 +75,14 @@
 
 /* ── Product info ────────────────────────────────── */
 .product-info {
-  width: 450px;
+  width: 500px;
   flex-shrink: 0;
   display: flex;
   flex-direction: column;
   gap: 20px;
   padding-top: 10px;
   color: white;
+  /* background-color: red; */
 }
 
 .product-name {
@@ -103,13 +104,21 @@
   opacity: 0.6;
   margin: 0;
   color: white;
+  background-color: red;
 }
 
 /* ── Quantity counter ────────────────────────────── */
 .qty-wrapper {
+  border: 1px solid white;
+  border-radius: 50px;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+  /* flex-direction: column; */
   gap: 10px;
+    /* background-color: red; */
+
 }
 
 .qty-label {
@@ -117,7 +126,7 @@
   letter-spacing: 0.06em;
   opacity: 0.5;
   margin: 0;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
 }
 
 .qty-counter {
@@ -125,18 +134,20 @@
   align-items: center;
   gap: 0;
   width: fit-content;
-  border: 1px solid rgba(255, 255, 255, 0.15);
+  /* border: 1px solid rgba(255, 255, 255, 0.15); */
   border-radius: 10px;
   overflow: hidden;
+  background-color: black;
 }
 
 .qty-btn {
-  background: rgba(255, 255, 255, 0.06);
+  background-color: var(--Tertiary);
+  /* background: rgba(255, 255, 255, 0.06); */
   border: none;
   cursor: pointer;
   color: white;
-  width: 44px;
-  height: 44px;
+  width: 30px;
+  height: 30px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -150,16 +161,15 @@
 
 .qty-value {
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 400;
   color: white;
-  min-width: 52px;
+  min-width: 30px;
   text-align: center;
-  border-left: 1px solid rgba(255, 255, 255, 0.1);
-  border-right: 1px solid rgba(255, 255, 255, 0.1);
-  height: 44px;
+  height: 30px;
   display: flex;
   align-items: center;
   justify-content: center;
+  border: none;
 }
 
 /* ── Buy button ──────────────────────────────────── */
@@ -173,6 +183,7 @@
   cursor: pointer;
   margin-top: 8px;
   font-size: 14px;
+  font-weight: 500;
 }
 
 /* ── Error state ─────────────────────────────────── */

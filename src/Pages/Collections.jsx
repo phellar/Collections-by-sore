@@ -7,6 +7,7 @@ import { useCart } from "../Context/CartContext";
 import { useNavigate } from "react-router-dom";
 import Header from "../Components/Header";
 import { Link } from "react-router-dom";
+import { formatCurrency } from "../Shared/formatCurrency";
 // import "./LatestCollection.css";
 
 gsap.registerPlugin(ScrollTrigger);
@@ -207,12 +208,7 @@ const Collections = () => {
 
                   <div className="product-description">
                     <h3>{item.name}</h3>
-                    <h3>
-                      {new Intl.NumberFormat("en-US", {
-                        style: "currency",
-                        currency: "NGN",
-                      }).format(Number(item.price))}
-                    </h3>
+                    <h3>{formatCurrency(item.price)}</h3>
                   </div>
                   
                   <div className="btn-box-2">
