@@ -5,16 +5,8 @@ import "./CheckOut.css";
 import Header from "../Components/Header";
 import { Link } from "react-router-dom";
 
-const formatCurrency = (amount) =>
-  new Intl.NumberFormat("en-US", {
-    style: "currency",
-    currency: "USD",
-    minimumFractionDigits: 2,
-    maximumFractionDigits: 2,
-  }).format(Number(amount));
-
 const CheckOut = ({ onBack }) => {
-  const { cartItems, cartTotal } = useCart();
+  const { cartItems, cartTotal, formatCurrency } = useCart();
 
   const [form, setForm] = useState({
     firstName: "",
@@ -179,6 +171,7 @@ const CheckOut = ({ onBack }) => {
                 <div className="checkout-total-row">
                   <span>total</span>
                   <span>{formatCurrency(cartTotal)}</span>
+                  
                 </div>
               </div>
             </div>

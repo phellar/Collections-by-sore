@@ -113,8 +113,8 @@
   cursor: pointer;
   width: 100%;
   margin-top: 8px;
-  font-size: 14px;
-  font-weight: 400;
+  font-size: 16px;
+  font-weight: 500;
 }
 
 /* ── Summary side ────────────────────────────────── */
@@ -246,9 +246,28 @@
 
   .checkout-summary-box {
     width: 100%;
+
   }
 
   .checkout-row {
     flex-direction: column;
   }
+
+  
+}
+
+@media screen and (max-width: 480px) {
+    .checkout-total-row span:last-child {
+  font-size: 15px;
+}
+
+.checkout-item{
+      flex-wrap: wrap;
+}
+
+.checkout-item-price{
+  font-size: 13px;
+}
+
+
 }

@@ -23,7 +23,7 @@ const HowItWorks = () => {
 
           start: "top 75%",
 
-          toggleActions: "play reverse play reverse",
+          toggleActions: "play none none none",
         },
 
         duration: 1,
@@ -43,7 +43,7 @@ const HowItWorks = () => {
 
           start: "top 70%",
 
-          toggleActions: "play reverse play reverse",
+          toggleActions: "play none none none",
         },
 
         duration: 0.8,
@@ -68,7 +68,7 @@ const HowItWorks = () => {
 
             start: "top 85%",
 
-            toggleActions: "play reverse play reverse",
+            toggleActions: "play none none none",
           },
 
           duration: 1.2,
@@ -91,7 +91,7 @@ const HowItWorks = () => {
 
           start: "top 80%",
 
-          toggleActions: "play reverse play reverse",
+          toggleActions: "play none none none",
         },
 
         duration: 0.8,
@@ -100,7 +100,25 @@ const HowItWorks = () => {
       });
     }, sectionRef);
 
-    return () => ctx.revert();
+    // Keep ScrollTrigger's trigger positions in sync with the page's real
+    // height. Images loading late (elsewhere on the page), fonts swapping,
+    // or arriving here via client-side route navigation (where window's
+    // "load" event never fires again) can all leave ScrollTrigger's
+    // calculations stale — this catches all of those cases.
+    let refreshTimeout;
+    const resizeObserver = new ResizeObserver(() => {
+      clearTimeout(refreshTimeout);
+      refreshTimeout = setTimeout(() => {
+        ScrollTrigger.refresh();
+      }, 150);
+    });
+    resizeObserver.observe(document.body);
+
+    return () => {
+      ctx.revert();
+      clearTimeout(refreshTimeout);
+      resizeObserver.disconnect();
+    };
   }, []);
 
   return (

@@ -1,5 +1,6 @@
 import React, { createContext, useContext, useState, useEffect } from "react";
 import { toast } from "react-toastify";
+import { formatCurrency } from "../Shared/formatCurrency";
 
 const CART_KEY = "sore_cart_items";
 
@@ -73,6 +74,7 @@ export const CartProvider = ({ children }) => {
         clearCart,
         cartCount,
         cartTotal,
+        formatCurrency
       }}
     >
       {children}
