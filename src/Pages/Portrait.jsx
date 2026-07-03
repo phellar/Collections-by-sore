@@ -129,7 +129,7 @@ const Portrait = () => {
             <div className="product-info">
               <h3 className="product-name">{product.name}</h3>
               {product.product_desc && (
-              <p className="product-description">{product.product_desc}</p>
+              <p className="product-descript">{product.product_desc}</p>
               )}
               <p className="product-price">{formatCurrency(product.price)}</p>
 

@@ -97,7 +97,7 @@ font-family: inherit;
   padding: 20px;
   display: flex;
   justify-content: space-between;
-    color: white;
+  color: white;
 }
 .product-description h3{
   font-weight: 400;

@@ -19,7 +19,7 @@ const About = () => {
               <div className="text-1">
                 <h1>About Our Collection</h1>
                 <p>(Inside the Mind of the Music)</p>
-                <small className="write-up">
+                <article className="write-up">
                   {" "}
                   Inside the Mind of the Music is an ongoing portrait series
                   that reimagines musicians not as public figures to be
@@ -36,12 +36,12 @@ const About = () => {
                   works translate intangible elements—melodies, emotions,
                   lyrics, identity, fame, ambition, vulnerability, and
                   legacy—into visual language.
-                </small>
+                </article>
               </div>
               <div className="abt-img"></div>
             </div>
             <div className="text-2">
-              <small>
+              <article className="write-up">
                 Recurring motifs such as flowers, cowries, currency, emojis,
                 stars, the mascot character, graffiti markings, and floating
                 objects function as visual clues, inviting viewers to decode the
@@ -54,7 +54,7 @@ const About = () => {
                 the collection challenges traditional portraiture and asks a
                 deeper question: What does music look like when transformed into
                 memory, emotion, and imagination?
-              </small>
+              </article>
             </div>
           </div>
         </div>

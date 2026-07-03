@@ -59,23 +59,25 @@ const ShortAbout = () => {
           "-=0.8",
         );
 
-      // image parallax
+      // image parallax — desktop/tablet only, skipped on mobile so it
+      // can't drift over the CTA button when the layout is stacked
+      if (window.innerWidth > 768) {
+        gsap.to(".about-box img", {
+          y: -100,
 
-      gsap.to(".about-box img", {
-        y: -100,
+          ease: "none",
 
-        ease: "none",
+          scrollTrigger: {
+            trigger: sectionRef.current,
 
-        scrollTrigger: {
-          trigger: sectionRef.current,
+            start: "top bottom",
 
-          start: "top bottom",
+            end: "bottom top",
 
-          end: "bottom top",
-
-          scrub: 1,
-        },
-      });
+            scrub: 1,
+          },
+        });
+      }
     }, sectionRef);
 
     return () => ctx.revert();

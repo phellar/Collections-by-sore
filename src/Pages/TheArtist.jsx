@@ -24,7 +24,7 @@ const TheArtist = () => {
                 </div>
               </div>
               <div className="b-1">
-                <small className="write-up">
+                <article className="write-up">
                   Sore Adebisi is a Lagos-based multidisciplinary visual artist,
                   creative director, and visual storyteller whose work
                   seamlessly blends contemporary African culture with bold
@@ -50,7 +50,7 @@ const TheArtist = () => {
                   <br/>
                   As the Creative Director for acclaimed Afrobeats artist Bnxn, Sore has played a key role in shaping the artist’s visual narrative, translating music into powerful visual experiences that resonate with audiences globally. Through every project, he combines artistic innovation with strategic thinking, establishing himself as one of the emerging creative voices redefining contemporary African visual culture.
 
-                </small>
+                </article>
               </div>
             </div>
             <div className="text-2">
